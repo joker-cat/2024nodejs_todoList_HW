@@ -86,7 +86,7 @@ const resServer = (req, res) => {
   }
   else {
     res.writeHead(404, headers);
-    res.write(JSON.stringify({ 'status': 'success', 'data': 'not found' }));
+    res.write(JSON.stringify({ 'status': 'faild', 'data': 'not found' }));
     res.end();
   }
 }
