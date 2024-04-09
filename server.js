@@ -92,6 +92,6 @@ const resServer = (req, res) => {
 }
 
 const server = http.createServer(resServer);
-server.listen(3005, () => {
-  console.log('listen port: 3005');
+server.listen(process.env.PORT || 3005, () => {
+  console.log(`listen port: ${process.env.PORT || 3005}`);
 });
